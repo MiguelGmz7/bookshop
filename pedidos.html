@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Shop Homepage - Start Bootstrap Template</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">BookShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pedidos.html">Pedidos</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Libros</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">Todos los libros</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#!">Libros populares</a></li>
+                            <li><a class="dropdown-item" href="#!">Nuevos libros</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <a class="btn btn-outline-dark" href="carrito.html">
+                        <i class="bi-cart-fill me-1"></i>
+                        Carrito
+                        <span id="cart-count" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark py-5" style="background-image: url(assets/layout.jpg)">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Mis pedidos</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Conoce la ubicación de tu paquete</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="ratreo">
+        <div class="paquetes">
+            <div class="numpaque">
+                <a href="#paq1" onclick="mostrar('paq1'); ocultar('paq2')";>Paquete 1</a>
+                <a href="#paq2" onclick="mostrar('paq2'); ocultar('paq1');">Paquete 2</a>
+            </div>
+            <div id="paq1" class="paq1">
+                <img src="assets/books/1.jpg" alt="" style=" height: 250px; margin-right: 1em;">
+                <img src="assets/books/1.jpg" alt="" style=" height: 250px;">
+                <div class="paqueteria">
+                    <p class="nompaqueteria"><i class="bi bi-box-seam"></i>DHL</p>
+                    <p>Numero de seguimiento: <span style="font-weight: bold">6101623551571</span></p>
+                    <a href="https://www.dhl.com/mx-es/home/rastreo.html">Restrar desde DHL ></a>
+                </div>
+                <div class="plazo">
+                    <p>Plazo Estimado de Entrega:Entrega entre 27 Oct 2023 ~ 07 Nov 2023.</p>
+                    <p style="color: #6c757d; margin-top: -1em; margin-left: .5em; font-size: 12px;"><i class="bi bi-exclamation-circle"></i>El tiempo de entrega real está sujeto al sitio oficial/notificación de la compañía de transportes.</p>
+                </div>
+            </div>
+            <div id="paq2" class="paq2">
+                <img src="assets/books/4.jpg" alt="" style=" height: 250px;">
+                <div class="paqueteria">
+                    <p class="nompaqueteria"><i class="bi bi-box-seam"></i>DHL</p>
+                    <p>Numero de seguimiento: <span style="font-weight: bold">6101623377511</span></p>
+                    <a href="https://www.dhl.com/mx-es/home/rastreo.html">Restrar desde DHL ></a>
+                </div>
+                <div class="plazo">
+                    <p>Plazo Estimado de Entrega:Entrega entre 30 Oct 2023 ~ 10 Nov 2023.</p>
+                    <p style="color: #6c757d; margin-top: -1em; margin-left: .5em; font-size: 12px;"><i class="bi bi-exclamation-circle"></i>El tiempo de entrega real está sujeto al sitio oficial/notificación de la compañía de transportes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; BookShop 2023</p></div>
+    </footer>
+
+    <script>
+        function mostrar(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function ocultar(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

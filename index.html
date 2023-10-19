@@ -1,0 +1,394 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">BookShop</a>
+                <!-- Busqueda -->
+                <div class="search-wrapper">
+                    <input type="search" id="search" placeholder="Buscar..." data-search>
+                </div>
+                <!-- ------------------>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <!--- Antes aqui estaba el ul de la 33 -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pedidos.html">Pedidos</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Libros</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html">Todos los libros</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!" id="bt_fantasia">Fantasía</a></li>
+                                <li><a class="dropdown-item" href="#!" id="bt_lgbt">LGBT+</a></li>
+                                <li><a class="dropdown-item" href="#!" id="bt_biografia">Biografía</a></li>
+                                <li><a class="dropdown-item" href="#!" id="bt_juvenil">Juvenil</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a class="btn btn-outline-dark" href="carrito.html">
+                            <i class="bi-cart-fill me-1"></i>
+                            Carrito<span id="cart-count" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <header class="bg-dark py-5" style="background-image: url(assets/layout.jpg)">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Explora nuestra colección de libros</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Encuentra los libros que te apasionan</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="py-5">
+                <div class="container px-4 px-lg-5 mt-5">
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+                                <div class="col mb-5 book">
+                                    <div class="card h-100">
+
+
+                                        <img class="card-img-top" src="assets/books/1.jpg" alt="..." />
+
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+
+                                                <h5 class="fw-bolder">La canción del lobo</h5>
+                                                <p class="gender">#Fantasía</p>
+                                                $557.10
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><a class="btn btn-outline-dark mt-auto cart-button" data-product-name="La canción del lobo" data-product-price="557.10"  href="#" >Añadir al carrito</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col mb-5 book">
+                                    <div class="card h-100">
+
+                                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+
+                                        <img class="card-img-top" src="assets/books/2.jpg" alt="..." />
+
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+
+                                                <h5 class="fw-bolder">Chica conoce chica</h5>
+                                                <p class="gender">#LGBT+</p>
+
+                                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star"></div>
+                                                </div>
+
+                                                <span class="text-muted text-decoration-line-through">$430.00</span>
+                                                $321.75
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><a class="btn btn-outline-dark mt-auto cart-button" data-product-name="Chica conoce a chica" data-product-price="430.00" href="#">Añadir al carrito</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col mb-5 book">
+                                    <div class="card h-100">
+
+
+                                        <img class="card-img-top" src="assets/books/3.jpg" alt="..." />
+
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+
+                                                <h5 class="fw-bolder">Siete maridos de Evelyn Hugo</h5>
+                                                <p class="gender">#Biografía</p>
+
+                                                $395.00
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><a class="btn btn-outline-dark mt-auto cart-button" href="#" >Añadir al carrito</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col mb-5 book">
+                                    <div class="card h-100">
+
+                                        <img class="card-img-top" src="assets/books/4.jpg" alt="..." />
+
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+
+
+                                                <h5 class="fw-bolder">De sangre y cenizas</h5>
+                                                <p class="gender">#Fantasía</p>
+
+                                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                </div>
+
+                                                $461.01
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><a class="btn btn-outline-dark mt-auto cart-button" href="#">Añadir al carrito</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col mb-5 book">
+                                    <div class="card h-100">
+
+                                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+
+                                        <img class="card-img-top" src="assets/books/5.jpg" alt="..." />
+
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+
+                                                <h5 class="fw-bolder">Lo poco que sabemos</h5>
+                                                <p class="gender">#Juvenil</p>
+
+                                                <span class="text-muted text-decoration-line-through">$163.00</span>
+                                                $99.00
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><a class="btn btn-outline-dark mt-auto cart-button" href="#">Añadir al carrito</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col mb-5 book">
+                                    <div class="card h-100">
+
+                                        <img class="card-img-top" src="assets/books/6.jpg" alt="..." />
+
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+
+                                                <h5 class="fw-bolder">Una perfecta confusión</h5>
+                                                <p class="gender">#LGBT+</p>
+                                                $486.25
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                                <div class="text-center"><a class="btn btn-outline-dark mt-auto cart-button" href="#" >Añadir al carrito</a></div>
+                                        </div>
+                                    </div>
+                            </div>
+
+
+                                <div class="col mb-5 book">
+                                    <div class="card h-100">
+
+                                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+
+                                        <img class="card-img-top" src="assets/books/7.jpg" alt="..." />
+
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+
+                                                <h5 class="fw-bolder">Solitario</h5>
+                                                <p class="gender">#Juvenil</p>
+
+                                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star"></div>
+                                                    <div class="bi-star"></div>
+                                                </div>
+
+                                                <span class="text-muted text-decoration-line-through">$326.05</span>
+                                                $299.00
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><a class="btn btn-outline-dark mt-auto cart-button" href="#" >Añadir al carrito</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col mb-5 book">
+                                    <div class="card h-100">
+
+                                        <img class="card-img-top" src="assets/books/8.jpg" alt="..." />
+
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+
+                                                <h5 class="fw-bolder">La casa en el mar más azul</h5>
+                                                <p class="gender">#Biografía</p>
+                                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                    <div class="bi-star-fill"></div>
+                                                </div>
+                                                $480.00
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><a class="btn btn-outline-dark mt-auto cart-button" href="#">Añadir al carrito</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; BookShop 2023</p></div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="js/scripts.js" defer></script>
+        <script>
+            /// Inicializa el contador en 0
+            let cartCount = 0;
+
+            // Función para incrementar el contador y actualizar la visualización
+            function addToCart() {
+                cartCount++;
+                // Actualiza el contenido del contador en el elemento HTML
+                document.getElementById("cart-count").textContent = cartCount;
+            }
+
+            // Agrega un evento de clic a todos los botones con la clase "cart-button"
+            const cartButtons = document.querySelectorAll(".cart-button");
+            cartButtons.forEach(function(button) {
+                button.addEventListener("click", addToCart);
+            });
+        </script>
+
+        <script>
+            // Recupera los elementos del carrito almacenados en localStorage
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+            // Variables para el total del carrito
+            let cartTotal = 0;
+
+            // Selecciona el elemento del tbody donde se mostrarán los productos
+            const cartItemsTable = document.getElementById('cart-items');
+
+            // Función para agregar un producto al carrito
+            function addToCart(product) {
+                const existingProduct = cartItems.find(item => item.name === product.name);
+
+                if (existingProduct) {
+                    // Si el producto ya existe en el carrito, incrementa la cantidad
+                    existingProduct.quantity += 1;
+                } else {
+                    // Si el producto no existe en el carrito, agrégalo como un nuevo producto
+                    product.quantity = 1;
+                    cartItems.push(product);
+                }
+
+                // Actualiza el carrito en localStorage
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+                // Actualiza la vista del carrito
+                displayCartItems();
+            }
+
+            // Función para mostrar los elementos del carrito en la tabla
+            function displayCartItems() {
+                // Limpia la tabla antes de volver a mostrar los elementos
+                cartItemsTable.innerHTML = '';
+
+                // Reinicia el total del carrito
+                cartTotal = 0;
+
+                cartItems.forEach(function(product) {
+                    // Crea una nueva fila en la tabla
+                    const row = cartItemsTable.insertRow();
+
+                    // Crea celdas para el nombre, precio y cantidad
+                    const nameCell = row.insertCell(0);
+                    const priceCell = row.insertCell(1);
+                    const quantityCell = row.insertCell(2);
+
+                    // Agrega el nombre, precio y cantidad del producto a las celdas
+                    nameCell.innerHTML = product.name;
+                    priceCell.innerHTML = `$${(product.price * product.quantity).toFixed(2)}`;
+                    quantityCell.innerHTML = product.quantity;
+
+                    // Calcula el total del carrito
+                    cartTotal += product.price * product.quantity;
+                });
+
+                // Muestra el total del carrito
+                document.getElementById('cart-total').textContent = cartTotal.toFixed(2);
+            }
+
+            // Agrega un evento de clic a todos los botones con la clase "cart-button"
+            const cartButtons = document.querySelectorAll(".cart-button");
+            cartButtons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    // Obtiene los atributos de datos del botón (nombre y precio del producto)
+                    const productName = button.getAttribute("data-product-name");
+                    const productPrice = parseFloat(button.getAttribute("data-product-price"));
+
+                    // Crea un objeto que representa el producto
+                    const product = {
+                        name: productName,
+                        price: productPrice
+                    };
+
+                    // Agrega el producto al carrito
+                    addToCart(product);
+                });
+            });
+
+            // Muestra los elementos del carrito al cargar la página
+            displayCartItems();
+        </script>
+
+    </body>
+</html>

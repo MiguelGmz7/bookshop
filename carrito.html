@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">BookShop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pedidos.html">Pedidos</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Libros</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html">Todos los libros</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="index.html" id="bt_fantasia">Fantasía</a></li>
+                                <li><a class="dropdown-item" href="#!" id="bt_lgbt">LGBT+</a></li>
+                                <li><a class="dropdown-item" href="#!" id="bt_biografia">Biografía</a></li>
+                                <li><a class="dropdown-item" href="#!" id="bt_juvenil">Juvenil</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a class="btn btn-outline-dark" href="carrito.html">
+                            <i class="bi-cart-fill me-1"></i>
+                            Carrito
+                            <span id="cart-count" class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <header class="bg-dark py-5" style="background-image: url(assets/layout.jpg)">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Carrito de compras</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Estas a un paso de tener tus libros</p>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="carrito">
+            <div class="carrito-product">
+                <table class="carrito-product">
+                    <thead class="titulotabla">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>PRODUCTO</th>
+                        <th> PRECIO</th>
+                        <th>CANTIDAD</th>
+                        <th>TOTAL</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="product-remove">
+                            <a href="#"><i class="bi bi-x-lg"></i></a>
+                        </td>
+                        <td class="product-img">
+                            <a href="#"><img src="assets/books/1.jpg" alt="" style=" height: 150px;"></a>
+                        </td>
+                        <td class="product-name"><a href="#" >La canción del lobo </a></td>
+                        <td class="product-price"><span class="amount">$557.10</span></td>
+                        <td class="cart-quality">
+                            <div class="product-details-quality quality-width-cart">
+                                <div class="cart-plus-minus">
+                                    <input class="cart-plus-minus-box" type="text" name="qtybutton" value="2">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="product-total"><span>$1,114.20</span></td>
+                    </tr>
+                    <tr>
+                        <td class="product-remove">
+                            <a href="#"><i class="bi bi-x-lg"></i></a>
+                        </td>
+                        <td class="product-img">
+                            <a href="#"><img src="assets/books/4.jpg" alt="" style=" height: 150px;"></a>
+                        </td>
+                        <td class="product-name"><a href="#">De sangre y cenizas</a></td>
+                        <td class="product-price"><span class="amount">$461.01</span></td>
+                        <td class="cart-quality">
+                            <div class="product-details-quality quality-width-cart">
+                                <div class="cart-plus-minus">
+                                    <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="product-total"><span>$461.01</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="total">
+                <h4>Total del carrito</h4>
+                <div class="grand-total-content">
+                    <ul>
+                        <li style="font-weight: bold;">Subtotal <span style="font-weight: normal; margin-left: 10em;"> $1,575.21</span></li><br>
+                        <li style="font-weight: bold;">Paqueteria
+                            <ul style="font-weight: normal;">
+                                <li><input type="radio" name="shipping" value="infor" checked="checked">Envío gratis</li>
+                                <li><input type="radio" name="shipping" value="info">DHL:<span style="margin-left: 10em;">$75.00</span></li>
+                                <li><input type="radio" name="shipping" value="info2">FedEx<span style="margin-left: 9.5em;">$50.00</span></li>
+                                <li><input type="radio" name="shipping" value="info3">Estafeta<span style="margin-left: 8.6em;">$35.00</span></li>
+                            </ul>
+                        </li><br>
+                        <li id="precio-total" style="font-weight: bold;">Precio Total <span style="font-weight: normal; margin-left: 9em;">$1,575.21</span> </li>
+                    </ul>
+                </div><br>
+                <div class="grand-btn" style="text-align: center;">
+                    <a href="#pago" style="color: white;">Proceder con el pago</a>
+                </div>
+            </div>
+        </div>
+        <section class="recomendation align-content-center">
+
+        </section>
+        <section id="pago" class="metocard">
+            <div class="pafooo">
+                <form>
+                    <div class="metodo-pago">
+                        <h2>Agrega una dirección</h2>
+                        <ul class="name">
+                            <li>
+                                <label for="nombre">Nombre(s)</label><br>
+                                <input id="nombre" name="nombre" type="text" required>
+                            </li>
+                            <li>
+                                <label for="apellido1">Primer apellido</label><br>
+                                <input id="apellido1" name="apellido1" type="text" required>
+                            </li>
+                            <li>
+                                <label for="apellido2">Segundo apellido</label><br>
+                                <input id="apellido2" name="apellido2" type="text">
+                            </li>
+                        </ul>
+                        <div class="address">
+                            <label for="calle">Calle y número</label><br>
+                            <input id="calle" name="calle" type="text" required><br>
+                            <label for="cp">Código postal</label><br>
+                            <input id="cp" name="cp" type="text" required><br>
+                            <label for="tel">Número de teléfono</label><br>
+                            <input id="tel" name="tel" type="phone" required><br>
+                        </div>
+                        <h2>Agrega metodo de pago</h2>
+                        <div class="cardf">
+                            <label for="cardholder" style="margin-top: 2em;">Nombre del titular de la tarjeta</label><br>
+                            <input type="text" id="cardholder" name="cardholder" required><br>
+
+                            <!-- Número de tarjeta -->
+                            <label for="cardnumber">Número de tarjeta</label><br>
+                            <input type="text" id="cardnumber" name="cardnumber" pattern="[0-9]{13,19}" required><br>
+
+                            <!-- Fecha de vencimiento -->
+                            <label for="expiration">Fecha de vencimiento (MM/YY)</label><br>
+                            <input type="text" id="expiration" name="expiration" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required><br>
+
+                            <!-- Código de seguridad (CVV/CVC) -->
+                            <label for="cvv">Código de seguridad (CVV/CVC)</label><br>
+                            <input type="text" id="cvv" name="cvv" pattern="[0-9]{3,4}" required><br>
+                        </div>
+
+
+                        <!-- Botón de envío -->
+                        <button class="bttn" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; BookShop 2023</p></div>
+        </footer>
+
+        <<script>
+            // Obtén una referencia a los elementos de radio de paquetería
+            const dhlRadio = document.querySelector('input[name="shipping"][value="info"]');
+            const fedexRadio = document.querySelector('input[name="shipping"][value="info2"]');
+            const estafetaRadio = document.querySelector('input[name="shipping"][value="info3"]');
+
+            // Obtén una referencia al elemento del precio total
+            const precioTotalElement = document.getElementById("precio-total");
+
+            // Agrega un evento change a los elementos de radio de paquetería
+            dhlRadio.addEventListener("change", actualizarPrecioTotal);
+            fedexRadio.addEventListener("change", actualizarPrecioTotal);
+            estafetaRadio.addEventListener("change", actualizarPrecioTotal);
+
+            // Función para actualizar el precio total según la selección de paquetería
+            function actualizarPrecioTotal() {
+                let subtotal = 1575.21; // Puedes definir tu subtotal inicial aquí
+                let precioEnvio = 0;
+
+                // Comprueba cuál de las opciones de paquetería está seleccionada
+                if (dhlRadio.checked) {
+                    precioEnvio = 75.00;
+                } else if (fedexRadio.checked) {
+                    precioEnvio = 50.00;
+                } else if (estafetaRadio.checked) {
+                    precioEnvio = 35.00;
+                }
+
+                // Calcula el precio total sumando el subtotal y el precio de envío
+                let precioTotal = subtotal + precioEnvio;
+
+                // Actualiza el contenido del elemento de precio total
+                precioTotalElement.innerHTML = `Precio Total <span style="font-weight: normal; margin-left: 9em;">$${precioTotal.toFixed(2)}</span>`;
+            }
+        </script>
+
+    </body>
+</html>
